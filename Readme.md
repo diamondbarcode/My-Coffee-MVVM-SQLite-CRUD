@@ -12,8 +12,8 @@ This is very basic app that i try to create base on what i learn from youtube an
 
 ## Nugget Package 
 
-- CommunityToolki.Mvvm
-- sqlite-net-pcl 
+- CommunityToolki.Mvvm - V 8.2.0
+- sqlite-net-pcl - V 1.8.116
 
 
 ### File Naming Shcema 
@@ -46,6 +46,9 @@ This is very basic app that i try to create base on what i learn from youtube an
 
 
 ## -- Do not mesh with this file --
+	- ABC.cs
+	- CBD.cs
+
 
 
 
@@ -54,3 +57,9 @@ This is very basic app that i try to create base on what i learn from youtube an
 	- John
 	- Jamal
 
+## images
+	- images are generate use Easy Diffusion and Stable Diffusion Webui 
+	- some images , icon , are default auto generate by MS Visual Studio
+
+
+If any files or code or anything i use here belong to you and i forgot to credit please let me know i will glade to update and give credit too.

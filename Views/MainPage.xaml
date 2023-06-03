@@ -1,8 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 xmlns:vm="clr-namespace:MyCoffeeMVVMSQLite.ViewModels"
-			 x:Class="MyCoffeeMVVMSQLite.Views.MainPage"
-			 x:DataType="vm:MainViewModel">
+<ContentPage
+    x:Class="MyCoffeeMVVMSQLite.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:MyCoffeeMVVMSQLite.ViewModels"
+    x:DataType="vm:MainViewModel">
+    <VerticalStackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="This is main page use menu to find out about our Coffee "
+            VerticalOptions="Center" />
+
+        <Label
+            HorizontalOptions="Center"
+            Text="This page is just place holder "
+            VerticalOptions="Center" />
+
+    </VerticalStackLayout>
 
 </ContentPage>

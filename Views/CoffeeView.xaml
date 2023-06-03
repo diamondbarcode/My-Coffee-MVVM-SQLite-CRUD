@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyCoffeeMVVMSQLite.Views.CoffeeView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:MyCoffeeMVVMSQLite.ViewModels"
+    Title="My Coffee View Page "
+    x:DataType="vm:CoffeeViewModel">
+    
+    <VerticalStackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="Welcome to My Coffee Page"
+            VerticalOptions="Center" />
+
+        <HorizontalStackLayout
+            Grid.Column=" 2"
+            Padding="3"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="StartAndExpand">
+
+            <Image
+                HeightRequest="60"
+                Source="coffeebag.png"
+                VerticalOptions="StartAndExpand" />
+
+            <VerticalStackLayout Grid.Row="3">
+                <Label Text="123" />
+                <Label Text="123" />
+                <Label Text="123" />
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
