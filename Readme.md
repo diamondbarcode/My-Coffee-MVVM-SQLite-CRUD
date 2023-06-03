@@ -1,9 +1,15 @@
-﻿Learning Basic C# with .Net Maui using MVVM and SQLite CRUD ( Create , Read , Update , Delete)
+﻿Learning Basic C# .Net Maui using MVVM and SQLite CRUD ( Create , Read , Update , Delete) - Basic 
 
 # About APP 
 
 This should make windows and android version of app to add , read update and delete coffee database using MVVM toolkit and SQLite.
 This is very basic app that i try to create base on what i learn from youtube and other website. I am appreacite if all expert come in help optimize and answer question if any a raise ..
+
+## Target & Test Platform 
+-	Windows 11
+	-	64 Bits
+-	Android 13+ 
+	-	S22 U
 
 ## Requirement :
 
@@ -49,15 +55,20 @@ This is very basic app that i try to create base on what i learn from youtube an
 	- ABC.cs
 	- CBD.cs
 
+## -- Ai Code Generate --
 
 
+## -- Ai Assist Code Generate --
 
-## Credits -- i will update list with proper name and link 
-	- Jame
-	- John
+## -- Ai Function -- No Idea What to do with this basic APP --
+
+
+## Credits -Thank to Following - i will update list with proper name and link 
+	- James Montemagno - https://youtu.be/XFP8Np-uRWc - https://github.com/jamesmontemagno/MyCoffeeApp?WT.mc_id=friends-0000-jamont - Xamarin
+	- Programming With Pragnesh - https://youtu.be/JRNwjsywrWM - https://github.com/mistrypragnesh40/SQLiteDemoMAUI 
 	- Jamal
 
-## images
+## Images
 	- images are generate use Easy Diffusion and Stable Diffusion Webui 
 	- some images , icon , are default auto generate by MS Visual Studio
 

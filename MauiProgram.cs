@@ -1,4 +1,7 @@
 ﻿namespace MyCoffeeMVVMSQLite;
+using MyCoffeeMVVMSQLite.ViewModels;
+using MyCoffeeMVVMSQLite.Views;
+using MyCoffeeMVVMSQLite.Services;
 
 public static class MauiProgram
 {
@@ -13,14 +16,21 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		builder.Services.AddSingleton<MainViewModel>();
 
-		builder.Services.AddSingleton<MainPage>();
 
-		builder.Services.AddSingleton<BlankViewModel>();
+        // Service Registration 
+        builder.Services.AddSingleton<ICoffeeService, CoffeeService>();
 
-		builder.Services.AddSingleton<BlankPage>();
+        // View Registration
+        builder.Services.AddSingleton<MainPage>(); // This is autogenrate page  that why naming does not follow screma 
+        builder.Services.AddSingleton<CoffeeView>();
 
-		return builder.Build();
+        // View Model Registration
+        builder.Services.AddSingleton<MainViewModel>();
+        builder.Services.AddSingleton<CoffeeViewModel>();
+
+
+
+        return builder.Build();
 	}
 }

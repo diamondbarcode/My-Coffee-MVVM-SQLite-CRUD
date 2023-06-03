@@ -6,9 +6,10 @@
     xmlns:vm="clr-namespace:MyCoffeeMVVMSQLite.ViewModels"
     Title="My Coffee View Page "
     x:DataType="vm:CoffeeViewModel">
-    
-    <VerticalStackLayout>
+
+    <VerticalStackLayout Padding="2" VerticalOptions="StartAndExpand">
         <Label
+            FontSize="Title"
             HorizontalOptions="Center"
             Text="Welcome to My Coffee Page"
             VerticalOptions="Center" />
@@ -20,11 +21,14 @@
             VerticalOptions="StartAndExpand">
 
             <Image
-                HeightRequest="60"
-                Source="coffeebag.png"
+                HeightRequest="100"
+                Source="b1.png"
                 VerticalOptions="StartAndExpand" />
 
-            <VerticalStackLayout Grid.Row="3">
+            <VerticalStackLayout
+                Grid.Row="3"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="CenterAndExpand">
                 <Label Text="123" />
                 <Label Text="123" />
                 <Label Text="123" />

@@ -5,16 +5,68 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:vm="clr-namespace:MyCoffeeMVVMSQLite.ViewModels"
     x:DataType="vm:MainViewModel">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Padding="10"
+        HorizontalOptions="CenterAndExpand"
+        Spacing="5"
+        VerticalOptions="StartAndExpand">
+        <Image MaximumWidthRequest="300" Source="appicon.png" />
         <Label
+            FontAttributes="Bold"
+            FontSize="Title"
             HorizontalOptions="Center"
             Text="This is main page use menu to find out about our Coffee "
             VerticalOptions="Center" />
 
         <Label
+            FontAttributes="Italic"
+            FontSize="Subtitle"
             HorizontalOptions="Center"
             Text="This page is just place holder "
             VerticalOptions="Center" />
+        <Label
+            FontAutoScalingEnabled="True"
+            FontSize="Body"
+            HorizontalOptions="Center"
+            Text="This section is where font auto scaling enable is true not sure what it acctualy does yet , i think this will change size base on screen "
+            VerticalOptions="Center" />
+        <!--  This can be done with grid view but i want to test what i can build with stack view  -->
+        <HorizontalStackLayout
+            Padding="2"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <Label
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Text="Search  :"
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center" />
+            <Entry
+                FontSize="Medium"
+                MinimumWidthRequest="300"
+                Placeholder="Search Coffee Info"
+                VerticalOptions="FillAndExpand"
+                VerticalTextAlignment="Center" />
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout
+            Padding="2"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <Label
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Text="Password :"
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center" />
+            <Entry
+                FontSize="Medium"
+                IsPassword="True"
+                MinimumWidthRequest="300"
+                Placeholder="Just Example Do nothing anything type turn to *"
+                VerticalOptions="FillAndExpand"
+                VerticalTextAlignment="Center" />
+        </HorizontalStackLayout>
 
     </VerticalStackLayout>
 

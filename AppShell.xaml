@@ -12,10 +12,14 @@
         Icon="iconblank.png"
         Route="MainPage"
         Shell.NavBarIsVisible="true" />
+
+    <!--  This is how you make new menu not sure about sub menu yet  -->
+    <!--  If you want to comment out section of text seletect text press CRT+K and CRT+C  -->
     <ShellContent
-        Title="Blank"
-        ContentTemplate="{DataTemplate views:BlankPage}"
+        Title="My Coffee Page"
+        ContentTemplate="{DataTemplate views:CoffeeView}"
         Icon="iconblank.png"
-        Route="BlankPage"
+        Route="CoffeeView"
         Shell.NavBarIsVisible="true" />
+
 </Shell>
