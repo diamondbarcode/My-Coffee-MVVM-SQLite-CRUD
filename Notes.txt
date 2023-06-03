@@ -1,0 +1,3 @@
+﻿  <VerticalStackLayout
+        FlexLayout.Grow="1080" << DO ? cant figure out what it does
+

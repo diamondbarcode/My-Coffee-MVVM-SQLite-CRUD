@@ -5,69 +5,125 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:vm="clr-namespace:MyCoffeeMVVMSQLite.ViewModels"
     x:DataType="vm:MainViewModel">
-    <VerticalStackLayout
-        Padding="10"
-        HorizontalOptions="CenterAndExpand"
-        Spacing="5"
-        VerticalOptions="StartAndExpand">
-        <Image MaximumWidthRequest="300" Source="appicon.png" />
-        <Label
-            FontAttributes="Bold"
-            FontSize="Title"
-            HorizontalOptions="Center"
-            Text="This is main page use menu to find out about our Coffee "
-            VerticalOptions="Center" />
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="10"
+            HorizontalOptions="FillAndExpand"
+            Spacing="10"
+            VerticalOptions="FillAndExpand">
+            <Image MaximumWidthRequest="300" Source="appicon.png" />
 
-        <Label
-            FontAttributes="Italic"
-            FontSize="Subtitle"
-            HorizontalOptions="Center"
-            Text="This page is just place holder "
-            VerticalOptions="Center" />
-        <Label
-            FontAutoScalingEnabled="True"
-            FontSize="Body"
-            HorizontalOptions="Center"
-            Text="This section is where font auto scaling enable is true not sure what it acctualy does yet , i think this will change size base on screen "
-            VerticalOptions="Center" />
-        <!--  This can be done with grid view but i want to test what i can build with stack view  -->
-        <HorizontalStackLayout
-            Padding="2"
-            HorizontalOptions="StartAndExpand"
-            VerticalOptions="CenterAndExpand">
-            <Label
-                FontSize="Medium"
+            <!--  Border only use for 1 label ..  -->
+            <Border
+                Padding="16,8"
+                Background="#2B0B98"
                 HorizontalOptions="Center"
-                Text="Search  :"
-                VerticalOptions="Center"
-                VerticalTextAlignment="Center" />
-            <Entry
-                FontSize="Medium"
-                MinimumWidthRequest="300"
-                Placeholder="Search Coffee Info"
-                VerticalOptions="FillAndExpand"
-                VerticalTextAlignment="Center" />
-        </HorizontalStackLayout>
-        
-        <HorizontalStackLayout
-            Padding="2"
-            HorizontalOptions="StartAndExpand"
-            VerticalOptions="CenterAndExpand">
+                StrokeShape="RoundRectangle 40,0,0,40"
+                StrokeThickness="2">
+                <Border.Stroke>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Offset="0.1" Color="Orange" />
+                        <GradientStop Offset="1.0" Color="Brown" />
+                    </LinearGradientBrush>
+                </Border.Stroke>
+
+                <Label
+                    Padding="4"
+                    FontAttributes="Bold"
+                    FontSize="Title"
+                    HorizontalOptions="Center"
+                    Text="This is main page use menu to find out about our Coffee "
+                    VerticalOptions="Center" />
+            </Border>
+
             <Label
-                FontSize="Medium"
+                FontAttributes="Italic"
+                FontSize="Subtitle"
                 HorizontalOptions="Center"
-                Text="Password :"
-                VerticalOptions="Center"
-                VerticalTextAlignment="Center" />
-            <Entry
-                FontSize="Medium"
-                IsPassword="True"
-                MinimumWidthRequest="300"
-                Placeholder="Just Example Do nothing anything type turn to *"
-                VerticalOptions="FillAndExpand"
-                VerticalTextAlignment="Center" />
-        </HorizontalStackLayout>
+                Text="This page is just place holder "
+                VerticalOptions="Center" />
+            <Label
+                FontAutoScalingEnabled="True"
+                FontSize="Body"
+                HorizontalOptions="Center"
+                Text="This section is where font auto scaling enable is true not sure what it acctualy does yet , i think this will change size base on screen "
+                VerticalOptions="Center" />
 
-    </VerticalStackLayout>
+            <!--  To use FillAndExpand it is require Grid to work Stack View does not work  -->
+            <Grid
+                Grid.Row="3"
+                Grid.Column="2"
+                Padding="2"
+                ColumnDefinitions="150,100*"
+                ColumnSpacing="4"
+                RowDefinitions="50,50,50"
+                RowSpacing="10">
 
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontSize="Medium"
+                    HorizontalOptions="End"
+                    Text="Search  :"
+                    VerticalTextAlignment="Center" />
+                <!--  Entry = single line input  , Editor = multiple line input  -->
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    ClearButtonVisibility="WhileEditing"
+                    FontAutoScalingEnabled="True"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Start"
+                    IsSpellCheckEnabled="True"
+                    Keyboard="Default"
+                    MinimumWidthRequest="300"
+                    Placeholder="Search Coffee Information If Exit display if not ask if want to add new   "
+                    VerticalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center" />
+
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontSize="Medium"
+                    HorizontalOptions="End"
+                    Text="User Name :"
+                    VerticalTextAlignment="Center" />
+
+                <Entry
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    ClearButtonVisibility="WhileEditing"
+                    FontAutoScalingEnabled="True"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Start"
+                    Keyboard="Default"
+                    MinimumWidthRequest="300"
+                    Placeholder="Just Visual Testing see how it look "
+                    VerticalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center" />
+
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="Medium"
+                    HorizontalOptions="End"
+                    Text="Password :"
+                    VerticalTextAlignment="Center" />
+
+                <Entry
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    ClearButtonVisibility="WhileEditing"
+                    FontAutoScalingEnabled="True"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Start"
+                    IsPassword="True"
+                    MinimumWidthRequest="300"
+                    Placeholder="This should show only * when typing  "
+                    VerticalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center" />
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
