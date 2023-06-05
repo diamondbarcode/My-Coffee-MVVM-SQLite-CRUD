@@ -1,3 +1,9 @@
 ﻿  <VerticalStackLayout
         FlexLayout.Grow="1080" << DO ? cant figure out what it does
 
+ViewCell ?
+
+
+
+reuseable control : https://youtu.be/XpQdxGM54TE 
+

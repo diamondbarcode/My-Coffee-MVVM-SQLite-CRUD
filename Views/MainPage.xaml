@@ -3,6 +3,7 @@
     x:Class="MyCoffeeMVVMSQLite.Views.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cards="clr-namespace:MyCoffeeMVVMSQLite.Cards"
     xmlns:vm="clr-namespace:MyCoffeeMVVMSQLite.ViewModels"
     x:DataType="vm:MainViewModel">
     <ScrollView>
@@ -46,10 +47,10 @@
                 FontAutoScalingEnabled="True"
                 FontSize="Body"
                 HorizontalOptions="Center"
-                Text="This section is where font auto scaling enable is true not sure what it acctualy does yet , i think this will change size base on screen "
+                Text="This test app design for mainly tablet and windows PC however it still work on phone screen  "
                 VerticalOptions="Center" />
 
-            <!--  To use FillAndExpand it is require Grid to work Stack View does not work  -->
+            <!--  Replace with Card
             <Grid
                 Grid.Row="3"
                 Grid.Column="2"
@@ -66,7 +67,7 @@
                     HorizontalOptions="End"
                     Text="Search  :"
                     VerticalTextAlignment="Center" />
-                <!--  Entry = single line input  , Editor = multiple line input  -->
+                  Entry = single line input  , Editor = multiple line input
                 <Entry
                     Grid.Row="0"
                     Grid.Column="1"
@@ -124,6 +125,13 @@
                     VerticalTextAlignment="Center" />
 
             </Grid>
+            -->
+            <!--
+                Using Card
+            -->
+            <cards:CustomerMinCard />
+
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

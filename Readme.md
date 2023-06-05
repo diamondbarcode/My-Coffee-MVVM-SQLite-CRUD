@@ -43,6 +43,9 @@ This is very basic app that i try to create base on what i learn from youtube an
 - [ViewModels] 
   - Store all Code behind View Page this is where the magic happen.
 	- Under this ViewModels folder there is a file < BaseViewModel.cs > this file contain all share information that other view models will be use .. so if anything that you think all your view models will be use put them in here ..
+- [Cards] -- https://youtu.be/TkadU_OfmIE  // - Reuse Cell // Content View .Xaml " NewContent1.xaml "
+	- Store Custome reusedable Control Across Page 
+	- [Model Name] + [ Type ] + Card
 
 
 - [Resource] 
