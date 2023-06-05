@@ -19,10 +19,9 @@
         Text="Search  :"
         VerticalTextAlignment="Center" />
 
-    <Entry
+    <SearchBar
         Grid.Row="0"
         Grid.Column="1"
-        ClearButtonVisibility="WhileEditing"
         FontAutoScalingEnabled="True"
         HorizontalOptions="FillAndExpand"
         HorizontalTextAlignment="Start"
